@@ -2,18 +2,17 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portafolio — Moisés Iván Llancapani Stormensan</title>
 
   <style>
     :root {
-      --accent: #2bdc8c;
-      --bg-main: #0d0f12;
-      --bg-card: #171a1f;
-      --bg-soft: #111418;
-      --text-main: #e6e6e6;
-      --text-muted: #a0a0a0;
-      --border: #222;
+      --accent: #2563eb;       /* Azul corporativo */
+      --bg-main: #ffffff;
+      --bg-card: #f9fafb;
+      --text-main: #111827;
+      --text-muted: #6b7280;
+      --border: #e5e7eb;
     }
 
     * {
@@ -26,54 +25,43 @@
       background-color: var(--bg-main);
       color: var(--text-main);
       font-family: "Inter", "Segoe UI", Roboto, sans-serif;
-      line-height: 1.65;
+      line-height: 1.7;
     }
 
     header {
-      text-align: center;
-      padding: 4.5rem 1.5rem 3rem;
-      border-bottom: 1px solid var(--border);
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
     }
 
     h1 {
-      font-size: 2.6rem;
+      font-size: 2.4rem;
       font-weight: 600;
-      color: var(--accent);
-      letter-spacing: 0.5px;
+      letter-spacing: 0.3px;
     }
 
     header p {
       margin-top: 0.75rem;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       color: var(--text-muted);
     }
 
     main {
       max-width: 900px;
-      margin: 3rem auto;
-      padding: 0 1.5rem;
+      margin: 0 auto;
+      padding: 0 1.5rem 3rem;
     }
 
     section {
-      background: var(--bg-card);
-      padding: 2rem;
-      border-radius: 14px;
-      margin-bottom: 2.5rem;
-      border: 1px solid var(--border);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    section:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      margin-bottom: 3rem;
     }
 
     h2 {
-      font-size: 1.5rem;
-      color: var(--accent);
-      margin-bottom: 1.2rem;
+      font-size: 1.35rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
       border-bottom: 1px solid var(--border);
-      padding-bottom: 0.6rem;
     }
 
     ul {
@@ -81,16 +69,22 @@
     }
 
     li {
-      background: var(--bg-soft);
-      padding: 1.1rem 1.3rem;
-      border-radius: 10px;
-      margin-bottom: 1rem;
+      background: var(--bg-card);
       border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem 1.4rem;
+      margin-bottom: 1rem;
     }
 
-    li strong {
-      color: var(--accent);
+    .title {
       font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .meta {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 0.4rem;
     }
 
     a {
@@ -103,25 +97,18 @@
       text-decoration: underline;
     }
 
-    .meta {
-      color: var(--text-muted);
-      font-size: 0.95rem;
-    }
-
     footer {
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
       border-top: 1px solid var(--border);
+      font-size: 0.85rem;
+      color: var(--text-muted);
     }
 
     @media (max-width: 600px) {
       h1 {
-        font-size: 2.1rem;
-      }
-      section {
-        padding: 1.5rem;
+        font-size: 2rem;
       }
     }
   </style>
@@ -133,49 +120,55 @@
   <h1>Moisés Iván Llancapani Stormensan</h1>
   <p>
     Ingeniero en Informática · Programador Full Stack ·
-    Visión Artificial & Backend
+    Backend · Visión Artificial
   </p>
 </header>
 
 <main>
 
   <section>
-    <h2>🚀 Proyectos destacados</h2>
+    <h2>Proyectos profesionales</h2>
     <ul>
       <li>
-        <strong>Detector de Objetos YOLOv7</strong><br>
-        <span class="meta">Python · OpenCV · Deep Learning</span><br>
-        <a href="https://github.com/mllancapani/proyecto-yolo" target="_blank">Ver repositorio</a>
+        <div class="title">Detección de objetos con YOLOv7</div>
+        <div class="meta">Python · OpenCV · Deep Learning</div>
+        <a href="https://github.com/mllancapani/proyecto-yolo" target="_blank">
+          Repositorio GitHub
+        </a>
       </li>
 
       <li>
-        <strong>Detección y Conteo de Salmones (YOLOv8)</strong><br>
-        <span class="meta">Python · OpenCV · Computer Vision</span><br>
-        <a href="https://github.com/mllancapani/YoloV8_DeteccionConteoSalmones" target="_blank">Ver repositorio</a>
+        <div class="title">Detección y conteo de salmones (YOLOv8)</div>
+        <div class="meta">Python · OpenCV · Computer Vision</div>
+        <a href="https://github.com/mllancapani/YoloV8_DeteccionConteoSalmones" target="_blank">
+          Repositorio GitHub
+        </a>
       </li>
 
       <li>
-        <strong>API REST en Go</strong><br>
-        <span class="meta">Go · MySQL · Arquitectura Backend</span><br>
-        <a href="https://github.com/mllancapani/api-go" target="_blank">Ver repositorio</a>
+        <div class="title">API REST para gestión de datos</div>
+        <div class="meta">Go · MySQL · Arquitectura Backend</div>
+        <a href="https://github.com/mllancapani/api-go" target="_blank">
+          Repositorio GitHub
+        </a>
       </li>
     </ul>
   </section>
 
   <section>
-    <h2>🎓 Certificaciones</h2>
+    <h2>Certificaciones</h2>
     <ul>
       <li>
-        <strong>Visión Artificial & Machine Learning con Python</strong><br>
-        <span class="meta">LinkedIn Learning</span><br>
+        <div class="title">Visión Artificial y Machine Learning con Python</div>
+        <div class="meta">LinkedIn Learning</div>
         <a href="https://www.linkedin.com/in/mois%C3%A9s-iv%C3%A1n-llancapani-stormensan-93002842/details/certifications/1766751322066/" target="_blank">
           Ver certificado
         </a>
       </li>
 
       <li>
-        <strong>Principios SOLID para Desarrollo de Software</strong><br>
-        <span class="meta">LinkedIn Learning</span><br>
+        <div class="title">Principios SOLID para desarrollo de software</div>
+        <div class="meta">LinkedIn Learning</div>
         <a href="https://www.linkedin.com/in/mois%C3%A9s-iv%C3%A1n-llancapani-stormensan-93002842/details/certifications/1752593620298/" target="_blank">
           Ver certificado
         </a>
@@ -184,12 +177,14 @@
   </section>
 
   <section>
-    <h2>📬 Contacto</h2>
+    <h2>Contacto</h2>
     <p>Email: <a href="mailto:moises.llancapanist@gmail.com">moises.llancapanist@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/mllancapani" target="_blank">github.com/mllancapani</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/mois%C3%A9s-iv%C3%A1n-llancapani-stormensan-93002842" target="_blank">
-      Perfil profesional
-    </a></p>
+    <p>LinkedIn: 
+      <a href="https://www.linkedin.com/in/mois%C3%A9s-iv%C3%A1n-llancapani-stormensan-93002842" target="_blank">
+        Perfil profesional
+      </a>
+    </p>
   </section>
 
 </main>
